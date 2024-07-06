@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.songdiv{
+    width: 95vw;
+    height: 45vh;
+    background-color: rgb(199, 219, 177);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 2rem;
+}
+.musicContainer{
+    width: 14rem;
+    height: 18rem;
+    background-color: rgb(198, 140, 237);
+    border-radius: 2rem;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 2);
+    padding: 2rem;
+    text-align: center;
+}
+.musicContainer #title{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    color: black;
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+.musicContainer #artist{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.1rem;
+    color: black;
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+.musicControls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top:2rem ;
+}
+.musicControls .fa-solid{
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    filter: drop-shadow( 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4));
+}
+.musicControls .fa-thin{
+    color: rgb(247, 247, 247);
+    font-size: 2rem;
+    cursor: pointer;
+    filter: drop-shadow( 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4));
+}
+
+
+.musicControls .main_button{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: rgb(242, 239, 239);
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.musicControls .fa-play:hover{
+    background-color: rgb(208, 208, 206);
+    color: black;
+    box-shadow:  0 1rem 2rem 0.2rem rgba(0,0,0,0.4);
+}
+
+@media (max-width:600px){
+
+    .songdiv{
+        width: 95vw;
+        height: 45vh;
+        background-color: rgb(199, 219, 177);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2rem;
+    }
+    h1{
+        margin-left: 1rem;
+    }
+
+    .musicContainer{
+        width: 14rem;
+        height: 18rem;
+        background-color: rgb(198, 140, 237);
+        border-radius: 2rem;
+        box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 2);
+        padding: 2rem;
+        margin-right: 1rem;
+        text-align: center;
+    }
+    .musicControls .fa-solid{
+        color: black;
+        font-size: .8rem;
+        cursor: pointer;
+        filter: drop-shadow( 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4));
+    }
+    .musicControls .fa-thin{
+        color: rgb(247, 247, 247);
+        font-size: 1rem;
+        cursor: pointer;
+        filter: drop-shadow( 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4));
+    }
+    
+
+
+}

@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    overflow-x: hidden;
+}
+*::selection{
+    color: white;
+    background-color: rgb(255, 77, 0);
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+html {
+    scroll-behavior: smooth;
+  }
+.nav{
+    height: 6.3rem;
+    width: 100%;
+    position:fixed;
+    z-index: 11;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff9e1f;
+    
+}
+.nav img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.links a{
+    text-decoration: none;
+    margin-right: 2rem;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding: .5rem;
+    background-color: rgb(255, 255, 255);
+}
+/* nav ends */
+
+/* page1  */
+ section #page1{
+    min-height: 100vh;
+    font-family: fantasy;
+    position: relative;
+    width: 100%;
+    padding: 0 2vw;
+    padding-top: 17vh;
+    background-color: rgb(0, 0, 0);
+}
+ section #page1 h1{
+    font-size: 8vw;
+    font-family: fantasy;
+    letter-spacing: -.01rem;
+    color: rgb(255, 111, 0);
+}
+section #page1 h2{
+    font-size: 8vw;
+    font-family: fantasy;
+    letter-spacing: -.01rem;
+    color: rgb(252, 153, 4);
+}
+.red{
+    font-weight: 900;
+    color: rgb(255, 38, 0);
+}
+
+section #page1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.x{
+    font-size: 8vw;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.right,.left{
+    font-family: sans-serif;
+    font-weight: 900 ;
+    color: #FCDC94;
+}
+.surface{
+    z-index: 100;
+}
+
+/* page 1 ends */
+
+ #about{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vw 2vw;
+    padding-top: 12vh;
+    background-color: rgb(248, 202, 129);
+    text-align: center;
+}
+
+
+ #schduleAndArtists{
+    min-height: 180vh;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 2vw;
+    background-color: rgb(255, 174, 0);
+}
+
+#tickets{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 2vw;
+    padding-top: 12vh;
+    background-color: rgb(34, 33, 32);
+    color: azure;
+}
+/* page 2 */
+.aboutHeading{
+    font-size: 10vh;
+    font-family: serif;
+    font-weight: 900;
+    top: 0;
+    left: 0;
+    color: rgb(118, 73, 52);
+    background-color: antiquewhite;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+#content{
+    margin: 3vh auto;
+    font-size: 4vh;
+    font-family: serif;
+    background-color: rgb(212, 217, 153);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.vision{
+    font-size: 3vh;
+    font-family: serif;
+    background-color: blanchedalmond;
+    padding: .3rem;
+    border-radius: 1rem;
+}
+
+.visionContent{
+    margin: 1rem auto;
+    background-color: antiquewhite;
+    font-size: 3vh;
+    padding: 2vh;
+    border-radius: 2rem;
+}
+
+/* page3 */
+
+#schduleAndArtists .day1{
+    min-height: 80vh;
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius: 2rem;
+    margin: 1rem auto;
+}
+#schduleAndArtists .day2{
+    min-height: 80vh;
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius: 2rem;
+    margin: 1rem auto;
+}
+#schduleAndArtists .scheduleheader{
+    background-color: #e5e0d2;
+    border-radius: 2rem;
+    padding: 2vh;
+    margin:  1rem auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.dayOneheading{
+    margin: 1rem 1rem;
+    font-size: 5vh;
+    width:20vh;
+    background-color: #ff9e1f; 
+    padding: .5rem;
+    border-radius: 1rem;
+    font-weight: 700;
+
+}
+
+
+
+.dayOneContent{
+    min-height: 63vh;
+    background-color: rgb(241, 240, 156);
+    border-radius: 2rem;
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imageOfDayOne img{
+    height: 29vh;
+    border-radius: 2rem;
+}
+.aboutOfDayOne{
+    height: 60vh;
+    width: 40%;
+    margin: 0 2vw;
+    background-color: rgb(227, 237, 167);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dayTwoTime,.dayOneTime{
+    font-size: 2vh;
+    margin: .3rem auto;
+    line-height: 4vh;
+}
+.daytwoVenue,.dayOneVenue{
+    padding-right: .5rem;
+    font-size: 2vh;
+    margin: .3rem auto;
+    text-align: right;
+    line-height: 4vh;
+}
+
+.dayTwoheading{
+    margin: 1rem 1rem;
+    width:20vh;
+    font-size: 5vh;
+    background-color: #ff9e1f; 
+    padding: .5rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    
+}
+.imageOfDayTwo img {
+    height: 60vh;
+    border-radius: 2rem;
+
+}
+.dayTwoContent{
+    min-height: 63vh;
+    background-color: rgb(238, 237, 175);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.aboutOfDayTwo{
+    height: 60vh;
+    width: 40%;
+    margin: 0 2vw;
+    background-color: rgb(227, 237, 167);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    height: 10vh;
+    width: 100%;
+    background-color: #060606;
+
+}
+.footer h1{
+    font-family: serif;
+    text-align: center;
+    font-size: 5vh;
+    color: #ff9e1f;
+    text-transform: uppercase;
+    
+}
+
+@media (max-width:600px){
+    html {
+        scroll-behavior: smooth;
+      }
+
+    .nav{
+        height: 5rem;
+        width: 100%;
+        position:fixed;
+        padding: .2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav img{
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .links a{
+        text-decoration: none;
+        margin-right: 1rem;
+        color: black;
+        font-weight: 600;
+        font-size: 1rem;
+        border-radius: 2rem;
+        padding: .5rem;
+        background-color: rgb(255, 255, 255);
+    }
+
+
+    /* page1  */
+ section #page1{
+    min-height: 60vh;
+    font-family: fantasy;
+    position: relative;
+    width: 100%;
+    padding: 0 .1vw;
+    padding-top :17vh;
+    background-color: rgb(0, 0, 0);
+}
+section #page1 h1{
+    font-size: 11vw;
+    font-family: fantasy;
+    letter-spacing: -.01rem;
+    color: rgb(255, 111, 0);
+    box-sizing: border-box;
+}
+section #page1 h2{
+    font-size: 10vw;
+    font-family: fantasy;
+    letter-spacing: -.01rem;
+    line-height: 20vw;
+    color: rgb(252, 153, 4);
+}
+
+
+
+#page1 h1::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+
+.aboutHeading{
+    font-size: 8.5vw;
+}
+
+#content{
+    font-size: 3vh;
+}
+
+
+.dayOneContent{
+    min-height: 50vh;
+    background-color: rgb(241, 240, 156);
+    border-radius: 2rem;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imageOfDayOne img{
+    height: 29vh;
+    border-radius: 2rem;
+}
+
+.aboutOfDayOne{
+    height: 30vh;
+    width: 95%;
+    margin: 2vw 2vw;
+    background-color: rgb(227, 237, 167);
+    border-radius: 2rem;
+}
+
+.imageOfDayTwo img {
+    height: 60vh;
+    border-radius: 2rem;
+
+}
+.dayTwoContent{
+    min-height: 50vh;
+    background-color: rgb(238, 237, 175);
+    border-radius: 2rem;
+    margin: 0 1rem;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem 1rem;
+}
+.aboutOfDayTwo{
+    height: 30vh;
+    width: 95%;
+    margin: 0 2vw;
+    background-color: rgb(227, 237, 167);
+    border-radius: 2rem;
+    margin: 1rem 1rem;
+}
+
+}

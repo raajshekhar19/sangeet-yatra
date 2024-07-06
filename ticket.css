@@ -1,0 +1,149 @@
+
+#tickets .movie-container{
+    margin: 1.2rem 0;
+}
+.movie-container select{
+    background-color: aliceblue;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+}
+
+.container{
+    background-color: rgb(61, 70, 62);
+}
+.container .row{
+    display: flex;
+    border-top-left-radius: .6rem;
+    border-top-right-radius: .6rem;
+    background-color: rgb(34, 39, 40);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%); 
+}
+
+.seat{
+    background-color: rgb(248, 233, 227);
+    height: .8rem;
+    width: .8rem;
+    margin: .25rem;
+    border-top-left-radius: .6rem;
+    border-top-right-radius: .6rem;
+}
+
+.selected{
+    background-color: rgb(0, 153, 255);
+}
+ .occupied{
+    background-color: rgb(255, 119, 0);
+}
+
+/* for making margin */
+.seat:nth-of-type(6){
+    margin-right: 1.5rem;
+}
+.seat:nth-last-of-type(6){
+    margin-left: 1.5rem;
+}
+
+/* seas which are vacant */
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.showcase .seat:not(.occupied):hover{
+    cursor: default;
+    transform: scale(1);
+
+}
+
+.showcase{
+    background-color: rgb(65, 60, 60);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    margin: 1rem auto;
+    color: blanchedalmond;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.showcase li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+}
+.showcase li small{
+    margin-left: .4rem;
+}
+.screen{
+    background-color: rgb(255, 255, 255);
+    height: 5rem;
+    width: 19rem;
+    margin: 0.5rem auto;
+    box-shadow: 0 .249rem .9rem rgb(195, 187, 187);
+}
+
+.purchase p{
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.purchase .text #count{
+    color: aqua;
+    font-weight: 900;
+}
+.purchase .text #total{
+    color: rgb(255, 217, 0);
+    font-weight: 900;
+}
+.movie-container{
+    background-color: rgb(74, 77, 77);
+    width: 30rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: aliceblue;
+    font-family: serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.movie-container label{
+    color: rgb(248, 248, 242);
+}
+#movie{
+    background-color: rgb(52, 54, 55);
+    color: rgb(231, 231, 231);
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#movie:hover{
+    background-color: rgb(58, 58, 55);
+}
+
+
+@media (max-width:600px){
+
+    .body{
+        overflow-x: hidden;
+        height: 100vh;
+        width: 100%;
+    }
+     .container{
+        width: 98%;
+     }
+     .showcase{
+        width: 98%;
+     }
+     .movie-container{
+        width: 22rem;
+     }
+     .purchase{
+        text-align: center;
+     }
+}
