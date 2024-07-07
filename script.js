@@ -7,40 +7,39 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// let tl = gsap.timeline();
+let tl = gsap.timeline()
+function pageOne() {
+    tl.from("#page1 .first", {
+        y: 100,
+        opacity: 0,
+        delay: 0.5
+    })
+    .from("#page1 .left", {
+        x: -200,
+        opacity: 0
+    })
+    .from("#page1 .right", {
+        x: -200,
+        opacity: 0
+    })
+    .from("#page1 .x", {
+        x: -200,
+        opacity: 0,
+        fontSize: 100
+    })
+    .from("#page1 .present", {
+        y: 100,
+        opacity: 0,
+        delay: 0.5
+    })
+    .from("#page1 .third", {
+        y: -100,
+        opacity: 0,
+        delay: 0.5
+    });
+}
 
-// function pageOne() {
-//     tl.from("#page1 .first", {
-//         y: 100,
-//         opacity: 0,
-//         delay: 0.5
-//     })
-//     .from("#page1 .left", {
-//         x: -200,
-//         opacity: 0
-//     })
-//     .from("#page1 .right", {
-//         x: -200,
-//         opacity: 0
-//     })
-//     .from("#page1 .x", {
-//         x: -200,
-//         opacity: 0,
-//         fontSize: 100
-//     })
-//     .from("#page1 .present", {
-//         y: 100,
-//         opacity: 0,
-//         delay: 0.5
-//     })
-//     .from("#page1 .third", {
-//         y: -100,
-//         opacity: 0,
-//         delay: 0.5
-//     });
-// }
-
-// pageOne();
+pageOne();
 
 gsap.registerPlugin(ScrollTrigger);
 
