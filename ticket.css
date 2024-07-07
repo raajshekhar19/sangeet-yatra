@@ -146,4 +146,8 @@
      .purchase{
         text-align: center;
      }
+     .showcase li small{
+        margin-left: .4rem;
+        font-size: .76rem;
+    }
 }
