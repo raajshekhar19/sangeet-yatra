@@ -1,45 +1,44 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
 }
-*::selection{
+*::selection {
     color: white;
     background-color: rgb(255, 77, 0);
 }
-html,body{
+html, body {
     height: 100%;
     width: 100%;
 }
 html {
     scroll-behavior: smooth;
-  }
-.nav{
+    scroll-padding: var(--scroll-padding, 5rem);
+}
+.nav {
     height: 6.3rem;
     width: 100%;
-    position:fixed;
+    position: fixed;
     z-index: 11;
     padding: .5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #ff9e1f;
-    
 }
-.nav img{
+.nav img {
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
 }
-
-.links{
+.links {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-.links a{
+.links a {
     text-decoration: none;
     margin-right: 2rem;
     color: black;
@@ -51,8 +50,8 @@ html {
 }
 /* nav ends */
 
-/* page1  */
- section #page1{
+/* page1 */
+section #page1 {
     min-height: 100vh;
     font-family: fantasy;
     position: relative;
@@ -61,23 +60,22 @@ html {
     padding-top: 17vh;
     background-color: rgb(0, 0, 0);
 }
- section #page1 h1{
+section #page1 h1 {
     font-size: 8vw;
     font-family: fantasy;
     letter-spacing: -.01rem;
     color: rgb(255, 111, 0);
 }
-section #page1 h2{
+section #page1 h2 {
     font-size: 8vw;
     font-family: fantasy;
     letter-spacing: -.01rem;
     color: rgb(252, 153, 4);
 }
-.red{
+.red {
     font-weight: 900;
     color: rgb(255, 38, 0);
 }
-
 section #page1 {
     display: flex;
     flex-direction: column;
@@ -85,23 +83,22 @@ section #page1 {
     justify-content: center;
     position: relative;
 }
-.x{
+.x {
     font-size: 8vw;
     color: rgb(255, 255, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.right,.left{
+.right, .left {
     font-family: sans-serif;
-    font-weight: 900 ;
+    font-weight: 900;
     color: #FCDC94;
 }
-.surface{
+.surface {
     z-index: 100;
 }
+/* page1 ends */
 
-/* page 1 ends */
-
- #about{
+#about {
     min-height: 100vh;
     width: 100%;
     z-index: 10;
@@ -116,8 +113,7 @@ section #page1 {
     text-align: center;
 }
 
-
- #schduleAndArtists{
+#schduleAndArtists {
     min-height: 180vh;
     width: 100%;
     z-index: 10;
@@ -130,7 +126,7 @@ section #page1 {
     background-color: rgb(255, 174, 0);
 }
 
-#tickets{
+#tickets {
     min-height: 100vh;
     width: 100%;
     z-index: 10;
@@ -144,8 +140,9 @@ section #page1 {
     background-color: rgb(34, 33, 32);
     color: azure;
 }
-/* page 2 */
-.aboutHeading{
+
+/* page2 */
+.aboutHeading {
     font-size: 10vh;
     font-family: serif;
     font-weight: 900;
@@ -156,7 +153,7 @@ section #page1 {
     padding: 1rem;
     border-radius: 2rem;
 }
-#content{
+#content {
     margin: 3vh auto;
     font-size: 4vh;
     font-family: serif;
@@ -164,15 +161,14 @@ section #page1 {
     border-radius: 1rem;
     padding: 1rem;
 }
-.vision{
+.vision {
     font-size: 3vh;
     font-family: serif;
     background-color: blanchedalmond;
     padding: .3rem;
     border-radius: 1rem;
 }
-
-.visionContent{
+.visionContent {
     margin: 1rem auto;
     background-color: antiquewhite;
     font-size: 3vh;
@@ -181,43 +177,39 @@ section #page1 {
 }
 
 /* page3 */
-
-#schduleAndArtists .day1{
+#schduleAndArtists .day1 {
     min-height: 80vh;
     width: 100%;
     background-color: antiquewhite;
     border-radius: 2rem;
     margin: 1rem auto;
 }
-#schduleAndArtists .day2{
+#schduleAndArtists .day2 {
     min-height: 80vh;
     width: 100%;
     background-color: antiquewhite;
     border-radius: 2rem;
     margin: 1rem auto;
 }
-#schduleAndArtists .scheduleheader{
+#schduleAndArtists .scheduleheader {
     background-color: #e5e0d2;
     border-radius: 2rem;
     padding: 2vh;
-    margin:  1rem auto;
+    margin: 1rem auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.dayOneheading{
+.dayOneheading {
     margin: 1rem 1rem;
     font-size: 5vh;
-    width:20vh;
-    background-color: #ff9e1f; 
+    width: 20vh;
+    background-color: #ff9e1f;
     padding: .5rem;
     border-radius: 1rem;
     font-weight: 700;
     font-family: cursive;
-
 }
 
-
-
-.dayOneContent{
+.dayOneContent {
     min-height: 63vh;
     background-color: rgb(241, 240, 156);
     border-radius: 2rem;
@@ -226,12 +218,11 @@ section #page1 {
     align-items: center;
     justify-content: space-around;
 }
-
-.imageOfDayOne img{
+.imageOfDayOne img {
     height: 29vh;
     border-radius: 2rem;
 }
-.aboutOfDayOne{
+.aboutOfDayOne {
     height: 60vh;
     width: 40%;
     margin: 0 2vw;
@@ -242,12 +233,12 @@ section #page1 {
     align-items: center;
     justify-content: center;
 }
-.dayTwoTime,.dayOneTime{
+.dayTwoTime, .dayOneTime {
     font-size: 3vh;
     margin: .3rem auto;
     line-height: 4vh;
 }
-.daytwoVenue,.dayOneVenue{
+.daytwoVenue, .dayOneVenue {
     padding-right: .5rem;
     font-size: 3vh;
     margin: .3rem auto;
@@ -255,23 +246,21 @@ section #page1 {
     line-height: 4vh;
 }
 
-.dayTwoheading{
+.dayTwoheading {
     margin: 1rem 1rem;
-    width:20vh;
+    width: 20vh;
     font-size: 5vh;
-    background-color: #ff9e1f; 
+    background-color: #ff9e1f;
     padding: .5rem;
     border-radius: 1rem;
     font-weight: 700;
     font-family: cursive;
-    
 }
 .imageOfDayTwo img {
     height: 60vh;
     border-radius: 2rem;
-
 }
-.dayTwoContent{
+.dayTwoContent {
     min-height: 63vh;
     background-color: rgb(238, 237, 175);
     border-radius: 2rem;
@@ -279,7 +268,7 @@ section #page1 {
     align-items: center;
     justify-content: space-around;
 }
-.aboutOfDayTwo{
+.aboutOfDayTwo {
     height: 60vh;
     width: 40%;
     margin: 0 2vw;
@@ -291,48 +280,46 @@ section #page1 {
     justify-content: center;
 }
 
-.footer{
+.footer {
     height: 10vh;
     width: 100%;
     background-color: #060606;
-
 }
-.footer h1{
+.footer h1 {
     font-family: serif;
     text-align: center;
     font-size: 5vh;
     color: #ff9e1f;
     text-transform: uppercase;
-    
 }
 
-@media (max-width:600px){
+@media (max-width: 600px) {
     html {
         scroll-behavior: smooth;
-      }
+    }
 
-    .nav{
+    .nav {
         height: 5rem;
         width: 100%;
-        position:fixed;
+        position: fixed;
         padding: .2rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .nav img{
+    .nav img {
         height: 4.5rem;
         width: 4.5rem;
         border-radius: 50%;
     }
 
-    .links{
+    .links {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
-    .links a{
+    .links a {
         text-decoration: none;
         margin-right: 1rem;
         color: black;
@@ -343,96 +330,83 @@ section #page1 {
         background-color: rgb(255, 255, 255);
     }
 
+    /* page1 */
+    section #page1 {
+        min-height: 60vh;
+        font-family: fantasy;
+        position: relative;
+        width: 100%;
+        padding: 0 .1vw;
+        padding-top: 17vh;
+        background-color: rgb(0, 0, 0);
+    }
+    section #page1 h1 {
+        font-size: 11vw;
+        font-family: fantasy;
+        letter-spacing: -.01rem;
+        color: rgb(255, 111, 0);
+        box-sizing: border-box;
+    }
+    section #page1 h2 {
+        font-size: 10vw;
+        font-family: fantasy;
+        letter-spacing: -.01rem;
+        line-height: 20vw;
+        color: rgb(252, 153, 4);
+    }
 
-    /* page1  */
- section #page1{
-    min-height: 60vh;
-    font-family: fantasy;
-    position: relative;
-    width: 100%;
-    padding: 0 .1vw;
-    padding-top :17vh;
-    background-color: rgb(0, 0, 0);
-}
-section #page1 h1{
-    font-size: 11vw;
-    font-family: fantasy;
-    letter-spacing: -.01rem;
-    color: rgb(255, 111, 0);
-    box-sizing: border-box;
-}
-section #page1 h2{
-    font-size: 10vw;
-    font-family: fantasy;
-    letter-spacing: -.01rem;
-    line-height: 20vw;
-    color: rgb(252, 153, 4);
-}
+    #page1 h1::-webkit-scrollbar {
+        display: none;
+    }
 
-
-
-#page1 h1::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
-}
-
-
-.aboutHeading{
-    font-size: 8.5vw;
-}
-
-#content{
-    font-size: 3vh;
-}
-
-
-.dayOneContent{
-    min-height: 50vh;
-    background-color: rgb(241, 240, 156);
-    border-radius: 2rem;
-    margin: 0 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.imageOfDayOne img{
-    height: 29vh;
-    border-radius: 2rem;
-}
-
-.aboutOfDayOne{
-    height: 30vh;
-    width: 95%;
-    margin: 2vw 2vw;
-    background-color: rgb(227, 237, 167);
-    border-radius: 2rem;
-}
-
-.imageOfDayTwo img {
-    height: 60vh;
-    border-radius: 2rem;
-
-}
-.dayTwoContent{
-    min-height: 50vh;
-    background-color: rgb(238, 237, 175);
-    border-radius: 2rem;
-    margin: 0 1rem;
-    margin: 0 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin: 1rem 1rem;
-}
-.aboutOfDayTwo{
-    height: 30vh;
-    width: 95%;
-    margin: 0 2vw;
-    background-color: rgb(227, 237, 167);
-    border-radius: 2rem;
-    margin: 1rem 1rem;
-}
-
+    .aboutHeading {
+        font-size: 8.5vw;
+    }
+    #content {
+        font-size: 3vh;
+    }
+    .dayOneContent {
+        min-height: 50vh;
+        background-color: rgb(241, 240, 156);
+        border-radius: 2rem;
+        margin: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .imageOfDayOne img {
+        height: 29vh;
+        border-radius: 2rem;
+    }
+    .aboutOfDayOne {
+        height: 30vh;
+        width: 95%;
+        margin: 2vw 2vw;
+        background-color: rgb(227, 237, 167);
+        border-radius: 2rem;
+    }
+    .imageOfDayTwo img {
+        height: 60vh;
+        border-radius: 2rem;
+    }
+    .dayTwoContent {
+        min-height: 50vh;
+        background-color: rgb(238, 237, 175);
+        border-radius: 2rem;
+        margin: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 1rem 1rem;
+    }
+    .aboutOfDayTwo {
+        height: 30vh;
+        width: 95%;
+        margin: 0 2vw;
+        background-color: rgb(227, 237, 167);
+        border-radius: 2rem;
+        margin: 1rem 1rem;
+    }
 }
