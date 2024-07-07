@@ -1,4 +1,4 @@
-let container = document.querySelector(".container");
+let containermovie = document.querySelector(".containermovie");
 let seats = document.querySelectorAll(".row .seats:not(.occupied)");
 let count  =  document.getElementById('count');
 let total = document.getElementById('total');
@@ -30,7 +30,7 @@ function deselectSeats() {
 }
 
 
-container.addEventListener("click",(event)=>{
+containermovie.addEventListener("click",(event)=>{
     if(event.target.classList.contains('seat') && !event.target.classList.contains('occupied')){
         event.target.classList.toggle('selected');
     }

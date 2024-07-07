@@ -11,10 +11,10 @@
     padding: 5px 15px 5px 15px;
 }
 
-.container{
+.containermovie{
     background-color: rgb(61, 70, 62);
 }
-.container .row{
+.containermovie .row{
     display: flex;
     border-top-left-radius: .6rem;
     border-top-right-radius: .6rem;
@@ -134,7 +134,7 @@
         height: 100vh;
         width: 100%;
     }
-     .container{
+     .containermovie{
         width: 98%;
      }
      .showcase{
