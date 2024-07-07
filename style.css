@@ -108,6 +108,7 @@ section #page1 {
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 3vw 2vw;
     padding-top: 12vh;
