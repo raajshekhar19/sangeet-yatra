@@ -242,13 +242,13 @@ section #page1 {
     justify-content: center;
 }
 .dayTwoTime,.dayOneTime{
-    font-size: 2vh;
+    font-size: 3vh;
     margin: .3rem auto;
     line-height: 4vh;
 }
 .daytwoVenue,.dayOneVenue{
     padding-right: .5rem;
-    font-size: 2vh;
+    font-size: 3vh;
     margin: .3rem auto;
     text-align: right;
     line-height: 4vh;
