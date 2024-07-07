@@ -1,7 +1,3 @@
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main'),
-    smooth: true
-});
 
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
